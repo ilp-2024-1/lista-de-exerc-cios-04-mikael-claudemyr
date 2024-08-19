@@ -57,17 +57,18 @@
 # consistirá em identificar e apresentar a partir da sequência de valores fornecidos, o
 # menor valor, o maior valor e a média aritmética dos valores. Exemplos:
 
-lista=[]
-lista2=[]
-listaOrdenada=[]
-qnt_usuario=int(input('Digite a quantidade de valores: '))
 
-for x in range(qnt_usuario):
-    lista.append(int(input('{}º valor da lista: '.format(x+1))))
+# 8. Escreva um programa que receba como entrada uma sequência de valores inteiros.
+# Para tanto, o programa deverá inicialmente solicitar ao usuário quantos valores serão
+# fornecidos para análise e só depois solicitar os valores a serem analisados. A análise
+# consistirá em identificar e apresentar a partir da sequência de valores fornecidos, o
+# menor valor, o maior valor e a média aritmética dos valores. Exemplos:
 
-for y in lista:
-    while lista:
-        if y < lista[y]:
-            lista2.append(y)
-    break
-print(lista2)
+lista = []
+menor=0
+nrValores = int(input("Você deseja analisar quantos valores? "))
+
+for x in range(nrValores):
+    lista.append(int(input('Informe o valor {}: '.format(x+1))))
+for xx in lista:
+        print(lista)
